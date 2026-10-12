@@ -34,7 +34,7 @@ Rebuild a brand-new desktop application from scratch, using a provided reference
 ## Backlog / Remaining
 - P1: Table view as semantic virtualized table; list/grid virtualization for large libraries.
 - P1: Real file import + local indexing; persist library/favorites.
-- P2: Real AI (summary/categorize) via Emergent LLM key.
+- P2: Real AI (summary/categorize) via LLM API key.
 - P2: Dark mode; drag-and-drop import; context menus on cards.
 
 ## Next Tasks
