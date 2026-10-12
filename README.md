@@ -10,6 +10,17 @@
 
 ---
 
+## 📥 Tải Về Cài Đặt (Bản 1.0.1)
+
+| Bản phát hành | Định dạng | Tải về trực tiếp | Hướng dẫn sử dụng |
+|---------------|-----------|-------------------|-------------------|
+| **SI Book Portable** | `.exe` (129 MB) | [👉 **Tải SI-Book-1.0.1-Portable.exe**](https://github.com/phanducdeveloper-spec/Sibook/releases/download/v1.0.1/SI-Book-1.0.1-Portable.exe) | **Khuyên dùng**: Không cần cài đặt, tải về bấm đúp chạy luôn |
+| **SI Book Setup** | `.exe` (130 MB) | [👉 **Tải SI-Book-1.0.1-Setup.exe**](https://github.com/phanducdeveloper-spec/Sibook/releases/download/v1.0.1/SI-Book-1.0.1-Setup.exe) | Trình cài đặt chuẩn Windows, tự tạo shortcut Desktop |
+
+> 💡 **Xem toàn bộ bản phát hành tại**: [GitHub Releases](https://github.com/phanducdeveloper-spec/Sibook/releases)
+
+---
+
 ## 🌟 Điểm Nổi Bật
 
 - 🚀 **Local-First & Quyền Riêng Tư Tuyệt Đối**: Toàn bộ dữ liệu, chỉ mục nội dung và ghi chú lưu trữ cục bộ trong cơ sở dữ liệu SQLite (WAL mode). Sách không bao giờ tự ý gửi lên đám mây.
