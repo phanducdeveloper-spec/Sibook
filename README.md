@@ -1,5 +1,7 @@
 # SI Book — Thư Viện Số & Trình Đọc Sách Trên Windows (v1.0.1)
 
+[Tiếng Việt](README.md) | [English](README_EN.md)
+
 [![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/phanducdeveloper-spec/Sibook)
 [![Platform](https://img.shields.io/badge/platform-Windows%20x64-informational.svg)](https://github.com/phanducdeveloper-spec/Sibook)
 [![Electron](https://img.shields.io/badge/Electron-44.7-brightgreen.svg)](https://www.electronjs.org/)
