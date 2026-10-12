@@ -1,0 +1,94 @@
+{
+  "name": "mewbook-desktop",
+  "productName": "SI Book",
+  "version": "1.0.1",
+  "private": true,
+  "type": "module",
+  "description": "SI Book - Thu vien so va trinh doc sach tren Windows",
+  "author": "Phan Đức",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173",
+    "build": "vite build",
+    "start": "npm run build && electron .",
+    "desktop": "electron .",
+    "pack": "npm run build && electron-builder --win --x64 --dir",
+    "dist": "npm run build && electron-builder --win --x64",
+    "test:backend": "node --test electron/library.test.cjs"
+  },
+  "dependencies": {
+    "adm-zip": "0.6.1",
+    "docx-preview": "^0.4.1",
+    "fast-xml-parser": "5.11.2",
+    "jszip": "^3.10.2",
+    "lucide-react": "0.516.0",
+    "pdfjs-dist": "5.4.624",
+    "pptx-preview": "^1.0.7",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "electron": "44.7.0",
+    "electron-builder": "26.15.3",
+    "vite": "6.4.4"
+  },
+  "build": {
+    "appId": "com.mewbook.desktop",
+    "productName": "SI Book",
+    "copyright": "© 2026 Phan Đức",
+    "asar": true,
+    "directories": {
+      "output": "../release",
+      "buildResources": "electron/resources"
+    },
+    "files": [
+      "build/**/*",
+      "electron/**/*",
+      "package.json",
+      "!build/assets/reference.png",
+      "!build/offline/**/*",
+      "!electron/*.test.cjs",
+      "!electron/make_fixtures.cjs"
+    ],
+    "win": {
+      "icon": "electron/resources/icon.ico",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "signAndEditExecutable": true
+    },
+    "portable": {
+      "artifactName": "SI-Book-${version}-Portable.exe"
+    },
+    "nsis": {
+      "artifactName": "SI-Book-${version}-Setup.exe",
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "SI Book",
+      "deleteAppDataOnUninstall": false,
+      "installerIcon": "electron/resources/icon.ico",
+      "uninstallerIcon": "electron/resources/icon.ico"
+    },
+    "asarUnpack": [
+      "electron/extractor.cjs",
+      "electron/formats.cjs",
+      "electron/office2pdf.ps1"
+    ]
+  }
+}
