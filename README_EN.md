@@ -23,6 +23,12 @@
 
 ---
 
+<p align="center">
+  <img src="docs/images/preview.png" alt="SI Book Desktop UI on Windows" width="100%" />
+</p>
+
+---
+
 ## 🌟 Key Features
 
 - 🚀 **Local-First & Strict Privacy**: All data, full-text indexes, and notes are stored locally in an SQLite database (WAL mode). Books and documents are never uploaded to any cloud server.

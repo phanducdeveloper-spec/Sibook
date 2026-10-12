@@ -23,6 +23,12 @@
 
 ---
 
+<p align="center">
+  <img src="docs/images/preview.png" alt="Giao diện SI Book trên Windows" width="100%" />
+</p>
+
+---
+
 ## 🌟 Điểm Nổi Bật
 
 - 🚀 **Local-First & Quyền Riêng Tư Tuyệt Đối**: Toàn bộ dữ liệu, chỉ mục nội dung và ghi chú lưu trữ cục bộ trong cơ sở dữ liệu SQLite (WAL mode). Sách không bao giờ tự ý gửi lên đám mây.
